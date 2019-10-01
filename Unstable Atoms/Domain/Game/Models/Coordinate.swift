@@ -11,8 +11,7 @@ class Coordinate {
     let y: Int
 
     init(x: Int, y: Int) {
-        self.x = x
-        self.y = y
+        // TODO: Implement
     }
 
 }

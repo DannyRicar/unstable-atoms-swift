@@ -7,16 +7,27 @@ import Foundation
 
 class UnstableAtomsGame: UnstableAtoms {
 
+    // TODO: Implement
     private(set) var winner: Player = .none
 
-    private(set) var playerOnMove: Player = .none
+    // TODO: Implement
+    private(set) var playerOnMove: Player = .red
 
+    // TODO: Implement
     private(set) var fields: [[Field]] = []
 
-    private(set) var redProgress: Float = 0
-
-    private(set) var blueProgress: Float = 0
-
+    private (set) var rows: Int
+    
+    private (set) var columns: Int
+    
+    init(rows: Int, columns: Int) {
+        fields = Array(repeating: Array(repeating: Field(owner: .none, amountOfAtoms: 0), count: rows), count: columns)
+        self.rows = rows
+        self.columns = columns
+    }
+    
+    // TODO: Implement
     func makeMove(coordinate: Coordinate) {
+        
     }
 }

@@ -12,10 +12,10 @@ protocol UnstableAtoms {
     var playerOnMove: Player { get }
 
     var fields: [[Field]] { get }
-
-    var redProgress: Float { get }
-
-    var blueProgress: Float { get }
+    
+    var rows: Int { get }
+    
+    var columns: Int { get }
 
     func makeMove(coordinate: Coordinate)
 

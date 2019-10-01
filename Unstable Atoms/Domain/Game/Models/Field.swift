@@ -11,8 +11,7 @@ class Field {
     let owner: Player
 
     init(owner: Player, amountOfAtoms: Int) {
-        self.owner = owner
-        self.amountOfAtoms = amountOfAtoms
+        // TODO: Implement
     }
 
 }

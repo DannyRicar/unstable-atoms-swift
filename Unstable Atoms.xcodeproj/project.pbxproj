@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92AF7005546A21E71EA2F5D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF7A39910E18CD0747AC70 /* SceneDelegate.swift */; };
+		92AF7063DABCABE2B1406EA8 /* UnstableAtomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF7BE11690B3D674157FE2 /* UnstableAtomViewCell.swift */; };
 		92AF71AD996B7D672B5DBC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AF7BBA3B2AF16459030926 /* Assets.xcassets */; };
 		92AF7264252D54B6627A192B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF7B4DF4A7C3988A80CBFA /* ViewController.swift */; };
 		92AF75D67A46E6C770565190 /* Unstable_AtomsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF7B9AE059B97CF46D6EC7 /* Unstable_AtomsUITests.swift */; };
@@ -54,6 +55,7 @@
 		92AF7B4DF4A7C3988A80CBFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92AF7B9AE059B97CF46D6EC7 /* Unstable_AtomsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unstable_AtomsUITests.swift; sourceTree = "<group>"; };
 		92AF7BBA3B2AF16459030926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92AF7BE11690B3D674157FE2 /* UnstableAtomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnstableAtomViewCell.swift; sourceTree = "<group>"; };
 		92AF7CF1BD689EC3605A8820 /* Unstable Atoms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unstable Atoms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AF7D51A72C9232BB41AD26 /* UnstableAtomsGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnstableAtomsGame.swift; sourceTree = "<group>"; };
 		92AF7D71089E2083BBA25E93 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
+		92AF79462910E7A66D379257 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				92AF7BE11690B3D674157FE2 /* UnstableAtomViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		92AF79F984B3B651370E645D /* Unstable AtomsUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +160,7 @@
 		92AF7E2D12903E5B363660CC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				92AF7B4DF4A7C3988A80CBFA /* ViewController.swift */,
+				E86E281123410BFF007B8827 /* UnstableAtom */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -173,6 +183,15 @@
 				92AF7EB2C2295F36EC54B4DD /* Field.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E86E281123410BFF007B8827 /* UnstableAtom */ = {
+			isa = PBXGroup;
+			children = (
+				92AF7B4DF4A7C3988A80CBFA /* ViewController.swift */,
+				92AF79462910E7A66D379257 /* CollectionView */,
+			);
+			path = UnstableAtom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +258,11 @@
 			attributes = {
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Educanet;
+				TargetAttributes = {
+					92AF7764A496667EBCE9C5A9 = {
+						DevelopmentTeam = BXZCQ7UNDX;
+					};
+				};
 			};
 			buildConfigurationList = 92AF77214FAA753391C568AF /* Build configuration list for PBXProject "Unstable Atoms" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -316,6 +340,7 @@
 				92AF77CE43BD07C51FEEC864 /* Player.swift in Sources */,
 				92AF7C2CA8E7F2C6AAD7D65A /* Field.swift in Sources */,
 				92AF77CEBB8A780044AC5F73 /* UnstableAtomsGame.swift in Sources */,
+				92AF7063DABCABE2B1406EA8 /* UnstableAtomViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BXZCQ7UNDX;
 				INFOPLIST_FILE = "Unstable Atoms/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Educanet.Unstable-Atoms";
@@ -540,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BXZCQ7UNDX;
 				INFOPLIST_FILE = "Unstable Atoms/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Educanet.Unstable-Atoms";
