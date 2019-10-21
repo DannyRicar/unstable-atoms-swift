@@ -28,6 +28,25 @@ class UnstableAtomsGame: UnstableAtoms {
     
     // TODO: Implement
     func makeMove(coordinate: Coordinate) {
+      
+        let x = fields[coordinate.x][coordinate.y].amountOfAtoms
+        
+        if(x == 0) {
+            fields[coordinate.x][coordinate.y] = Field(owner: .red, amountOfAtoms: 1)
+        }
+        if(x == 1) {
+            fields[coordinate.x][coordinate.y] = Field(owner: .red, amountOfAtoms: 2)
+        }
+        if(x == 2) {
+            fields[coordinate.x][coordinate.y] = Field(owner: .red, amountOfAtoms: 3)
+        }
+        if(x == 3) {
+            fields[coordinate.x][coordinate.y] = Field(owner: .red, amountOfAtoms: 0)
+            fields[coordinate.x - 1][coordinate.y] = Field(owner: playerOnMove, amountOfAtoms: 1)
+            fields[coordinate.x + 1][coordinate.y] = Field(owner: playerOnMove, amountOfAtoms: 1)
+            fields[coordinate.x][coordinate.y - 1] = Field(owner: playerOnMove, amountOfAtoms: 1)
+            fields[coordinate.x][coordinate.y + 1] = Field(owner: playerOnMove, amountOfAtoms: 1)
+        }
         
     }
 }
